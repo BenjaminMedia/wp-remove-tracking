@@ -1,0 +1,27 @@
+{
+  "name": "benjaminmedia/wp-remove-tracking",
+  "description": "Remove some tracking from MonsterInsights",
+  "type": "wordpress-plugin",
+  "keywords": ["wordpress", "plugin"],
+  "homepage": "https://github.com/BenjaminMedia/wp-remove-tracking",
+  "repositories":[
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Bonnier Publications",
+      "email": "interactive@bonnier.dk",
+      "homepage": "http://bonnierpublications.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/BenjaminMedia/wp-remove-tracking/issues",
+    "source": "https://github.com/BenjaminMedia/wp-remove-tracking"
+  },
+  "require": {
+    "php": ">=5.6"
+  }
+}
