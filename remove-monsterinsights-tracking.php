@@ -3,7 +3,7 @@
 Plugin Name: Remove MonsterInsights Frontend Tracking
 Plugin URI: https://www.monsterinsights.com
 Description: Removes MonsterInsights tracking (just use it as a dashboard)
-Version: 1.0.1
+Version: 1.0.2
 Author: Chris Christoff
 Author URI:  https://www.monsterinsights.com
 */
