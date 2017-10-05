@@ -3,7 +3,7 @@
 Plugin Name: Remove MonsterInsights Frontend Tracking
 Plugin URI: https://www.monsterinsights.com
 Description: Removes MonsterInsights tracking (just use it as a dashboard)
-Version: 1.0.1
+Version: 1.0.2
 Author: Chris Christoff
 Author URI:  https://www.monsterinsights.com
 */
@@ -20,8 +20,10 @@ function remove_monsterinsights_ga_frontend_tracking(){
     remove_class_filter( 'comment_text', $class, 'comment_text' , 99 );
   }
   // MonsterInsights 6.0+
-  remove_action( 'wp_head', 'monsterinsights_tracking_script', 8 );
-  remove_action( 'template_redirect', 'monsterinsights_events_tracking' );
+  // Note: To remove an action the priority must match the priority with with the function was originally added.
+  // remove_action reference https://codex.wordpress.org/Function_Reference/remove_action
+  remove_action( 'wp_head', 'monsterinsights_tracking_script', 6 );
+  remove_action( 'template_redirect', 'monsterinsights_events_tracking', 9 );
 }
 add_action( 'plugins_loaded', 'remove_monsterinsights_ga_frontend_tracking');
 
